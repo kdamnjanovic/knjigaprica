@@ -1,0 +1,641 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Prata&display=swap');
+
+*{
+    font-family: 'Outfit',sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 45px;
+}
+
+h3{
+    font-size: 23px;
+}
+
+body{
+    background-color:  #f3f1ff;
+}
+
+img{
+    z-index: 0;
+}
+
+
+/* header */
+
+
+header{
+    background-color: #f3f1ff !important;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 150px;
+    height: 90px;
+    /* left: 0%;
+    right: 0%;
+    top: 0%;  
+    bottom: auto; */
+    /* background-color: #f3f1ff ; */
+    border-bottom: 0.5px solid #eae7e7;
+    color: #0f0840;
+} 
+
+.logo {
+    height: 32px;
+    max-width: 100%; 
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link:hover{
+    color:#d9465a;    
+}
+
+.nav-link{
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: #0f0840;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#nav-button:hover{
+    filter: brightness(93%);
+    color: #f3f1ff;
+}
+
+#nav-button{
+    border: none;
+    border-radius: 10px;
+    padding: 16px 25px;
+    text-align: center;
+    background-color: #d9465a;
+}
+
+#platforma-dugme{
+    color: #f3f1ff;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #d9465a;
+}
+
+/* 1. sekcija - Audio knjige na srpskom jeziku u tvom džepu*/
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 600px;
+    overflow: visible;
+    color: #0f0840;
+    
+}
+
+.hero1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 50px;
+}
+
+.hero1-tekst{
+    font-size: 4.7em;
+    font-weight:600;
+    line-height: 105%;
+}
+
+.hero1-slike{ 
+    display: flex;
+   align-items: flex-start; 
+   gap: 15px;
+}
+
+.hero1-dugme:hover{
+    transform: translateY(-3px); 
+}
+
+.hero1-dugme{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero1-prodavnice{
+    height: 60px; 
+}
+
+@keyframes slideUp{
+    from {
+      top: 250px; 
+    }
+    to {
+      top: 75px; 
+    }
+}
+
+.telefon-pocetna{
+    max-width: 350px;
+    vertical-align: middle;
+    position: relative;
+    overflow: visible;
+    animation-name: slideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; 
+}
+
+/* 2. sekcija - Prednosti Knjigapriča audio knjiga*/
+
+.parent{
+    background-color: #0f0840;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+
+.p-content{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.parent-items
+{
+    align-content: left;
+    color: #f3f1ff;
+    padding-bottom: 20px;
+}
+
+#parent-heading{
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+#parent-para{
+    font-size:20px;
+    padding-bottom: 45px;
+}
+
+.children{
+    display: flex;
+    justify-content: space-between;
+    gap:23px;
+    
+}
+
+.child{
+    flex: 1;
+    background-color: #f3f1ff;
+    border-radius: 5%;
+    padding:25px;
+    height: 300px;
+    width:300px;
+    display: inline-block;
+}
+
+.child-img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.child-title{
+    margin-bottom: 20px;
+}
+
+.child-para{
+    margin-bottom: 20px;
+    font-size:18px;
+    line-height: 1.7;
+}
+
+/* 3. sekcija - Izdavaci */
+
+.izdavaci{
+    align-items: center;
+    justify-content: center;
+}
+
+.izdavaci-naslov{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    width: 100%;
+
+}
+
+.izdavaci-grupa{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.izdavac{
+    max-width: 150px;
+    max-height: 150px;
+    padding-bottom: 50px;
+}
+
+/* Sekcija 4 - o aplikaciji*/
+
+.heroj{
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+.heroj-telefon{
+    width:500px;
+    height: 700px;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroj-slika{
+    width: 410px;
+    height: 440px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+   
+}
+
+.heroj-kutija{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 410px; 
+    height: 400px; 
+    background-color: #ddddf8;
+    z-index: -2; 
+    border-radius: 9%;
+}
+
+.heroj-tekst{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+   font-size: 19px;
+    margin-top: 150px;
+}
+.heroj-naslov{
+    margin-bottom: 20px;
+}
+
+#heroj-naslov-3{
+    padding-bottom: 20px;
+}
+#heroj-para-3{
+    padding-bottom: 20px;
+}
+.cekboks-stavka{
+    padding-top: 15px;
+    display: flex;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.cekboks-slika{
+    border-radius: 50%;
+    box-shadow: 0 3px 4px #8e8d8d;
+}
+
+/* Sekcija 5 - Zanimljivosti */
+.zanimljivosti{
+    background-color: #d9465a;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    
+}
+
+.zanimljivosti-wrap{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+}
+
+.zanimljivosti-sadrzaj{
+    flex: 1;
+    background-color: #d9465a;
+    height: 200px;
+    width:200px;
+    display: grid;
+    color: #f3f1ff;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.zanimljivosti-tekst{
+    font-size: 20px;
+    text-align: center;
+}
+
+.zanimljivosti-broj{
+    font-size: 65px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Sekcija 6 - Cesto postavljana pitanja */
+
+.faq{
+    padding: 100px 150px;
+    
+}
+
+.faq-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.table-to-work-on{
+    display: none;
+}
+
+.toggle-content{
+    display: none;
+}
+
+.faq-grupe{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.faq-grupa{
+    gap: 30px;
+    justify-content: space-between;
+   
+    
+}
+
+.toggle-wrap{
+    
+    
+    width: 500px;
+    display: grid;
+    place-self: center;
+    place-items:  center; 
+    margin-bottom: 20px;
+}
+
+.toggle-button-wrap{
+    width: 500px;
+    height:50px;
+    border: solid 0.5px #a5a5a5 ;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.toggle-button{
+    width:450px;
+    background-color: #f3f1ff;
+    align-items: center;
+    border: none;
+    display: flex;
+    padding: 35px 0;
+    justify-content: space-between;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.toggle-content{
+    padding: 20px;
+    padding-top: 30px;
+}
+
+
+.toggle-slika{
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle-slika:active {
+    transform: rotate(180deg); 
+}
+
+
+/* Footer */
+
+#footer-sekcija{
+    width: 100%;
+    background-color: #0f0840;
+}
+
+#footer-reklama{
+    display: grid;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    color: #f3f1ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#footer-reklama-tekst{
+    padding-bottom: 30px;
+    font-weight: 500;
+    line-height: 130%;
+}
+#footer-reklama-slike{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-dugme{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-prodavnice:hover{
+    transform: translateY(-3px); 
+}
+
+.footer-prodavnice{
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+#footer-meni{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    border-top: 0.3px solid #a5a5a5;
+}
+
+.footer-meni-sekcija{
+    display:flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-item{
+    color: #a5a5a5;
+}
+
+.footer-link:hover{
+    color:#f3f1ff;    
+}
+
+.footer-link{
+    transition: 0.7s ease;
+    text-decoration: none;
+    color: #a5a5a5;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer-button:hover{
+    background-color: #d9465a; 
+}
+
+.footer-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img{
+    width: 30px;
+    height:30px;
+    padding: 5px;
+}
+
+
+/* Nije dovrseno */
+
+@media screen and (max-width:1140px){
+
+    .navbar{
+        margin: auto;
+    }
+    .hamburger{
+        display:block;
+    }
+
+    .nav-menu{
+        position:fixed;
+        Left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #f3f1ff;        
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        Left: 0;
+    }
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    height: auto;
+    margin: 90px 100px;
+ 
+}
+.hero1{
+    font-size: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+}
+
+.hero1-slike{ 
+    display: flex;
+   align-items: center; 
+   gap: 10px;
+}
+
+.telefon-pocetna{
+    max-width: 280px;
+}
+}
+
+
